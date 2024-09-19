@@ -24,6 +24,13 @@ namespace _4T_Obdelniky
             StranaA = Convert.ToInt32(stranaA);
             StranaB = Convert.ToInt32(stranaB);
         }
+        public Obdelnik(string radekCSV)
+        {
+            string[] hodnoty = radekCSV.Split(';');
+            StranaA = Convert.ToInt32(hodnoty[0]);
+            StranaB = Convert.ToInt32(hodnoty[1]);
+
+        }
         public string ToCSV() => StranaA + ";" + StranaB;
 
         public override string ToString() => "Obdelník " + " strana A: " + StranaA + ", strana B: " + StranaB;

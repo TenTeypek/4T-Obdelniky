@@ -33,8 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbObsah = new System.Windows.Forms.TextBox();
+            this.tbObvod = new System.Windows.Forms.TextBox();
             this.tbStranaB = new System.Windows.Forms.TextBox();
             this.tbStranaA = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -93,19 +93,19 @@
             this.listBox1.TabIndex = 13;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // textBox2
+            // tbObsah
             // 
-            this.textBox2.Location = new System.Drawing.Point(211, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.tbObsah.Location = new System.Drawing.Point(211, 175);
+            this.tbObsah.Name = "tbObsah";
+            this.tbObsah.Size = new System.Drawing.Size(100, 20);
+            this.tbObsah.TabIndex = 9;
             // 
-            // textBox1
+            // tbObvod
             // 
-            this.textBox1.Location = new System.Drawing.Point(211, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.tbObvod.Location = new System.Drawing.Point(211, 132);
+            this.tbObvod.Name = "tbObvod";
+            this.tbObvod.Size = new System.Drawing.Size(100, 20);
+            this.tbObvod.TabIndex = 10;
             // 
             // tbStranaB
             // 
@@ -129,6 +129,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Upravit";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -173,21 +174,21 @@
             // načístToolStripMenuItem
             // 
             this.načístToolStripMenuItem.Name = "načístToolStripMenuItem";
-            this.načístToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.načístToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.načístToolStripMenuItem.Text = "&Načíst";
             this.načístToolStripMenuItem.Click += new System.EventHandler(this.načístToolStripMenuItem_Click);
             // 
             // uložitToolStripMenuItem
             // 
             this.uložitToolStripMenuItem.Name = "uložitToolStripMenuItem";
-            this.uložitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uložitToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.uložitToolStripMenuItem.Text = "&Uložit";
             this.uložitToolStripMenuItem.Click += new System.EventHandler(this.uložitToolStripMenuItem_Click);
             // 
             // uložitJakoToolStripMenuItem
             // 
             this.uložitJakoToolStripMenuItem.Name = "uložitJakoToolStripMenuItem";
-            this.uložitJakoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uložitJakoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.uložitJakoToolStripMenuItem.Text = "Uložit j&ako";
             // 
             // Form1
@@ -200,8 +201,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbObsah);
+            this.Controls.Add(this.tbObvod);
             this.Controls.Add(this.tbStranaB);
             this.Controls.Add(this.tbStranaA);
             this.Controls.Add(this.button3);
@@ -224,8 +225,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbObsah;
+        private System.Windows.Forms.TextBox tbObvod;
         private System.Windows.Forms.TextBox tbStranaB;
         private System.Windows.Forms.TextBox tbStranaA;
         private System.Windows.Forms.Button button3;
